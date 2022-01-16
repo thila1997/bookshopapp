@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Shop Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+        background-repeat: no-repeat;
+        background-image: url('https://images.unsplash.com/photo-1566131807516-e3b3cd1a89d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9vayUyMHNob3B8ZW58MHx8MHx8&w=1000&q=80');
+        background-size: 1600px 900px
+}
+    </style>
+</head>
+<body style="background-color:powderblue;">
+<div class="container text-center">
+    <div><h1>Welcome to Book Shop App</h1></div>
+    <div class="p-2">
+        <a class="h5"  th:href="@{/categories}"> List Categories </a>
+    </div>
+    <div class="p-2">
+        <a class="h5"  th:href="@{/categories/new}"> Create Category </a>
+    </div>
+    <div class="p-2">
+        <a class="h5"  th:href="@{/products}"> List Products </a>
+    </div>
+    <div class="p-2">
+        <a class="h5"  th:href="@{/products/new}"> Create Product </a>
+    </div>
+    <div class="p-2">
+        <a class="h5"  th:href="@{/brands}"> List Brands </a>
+    </div>
+    <div class="p-2">
+        <a class="h5"  th:href="@{/brands/new}"> Create Brand </a>
+    </div>
+</div>
+
+</body>
+</html>
