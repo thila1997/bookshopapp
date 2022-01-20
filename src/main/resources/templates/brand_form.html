@@ -15,14 +15,14 @@
     </style>
 </head>
 <body>
-<div class="container text-center">
-    <div th:if="${brand.id == null}"><h1>Create New Brand</h1></div>
-    <div th:unless="${brand.id == null}"><h1>Edit Brand</h1></div>
+<div class="container text-center" style="margin-top: 50px;">
+    <div th:if="${brand.id == null}"><h1 style="font-family: Papyrus; color: white; text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;">Create New Brand</h1></div>
+    <div th:unless="${brand.id == null}"><h1 style="font-family: Papyrus; color: white; text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;">Edit Brand</h1></div>
 
     <form th:action = "@{/brands/save}" th:object="${brand}" method="post"
-    style="max-width: 600px; margin: 0 auto;">
+    style="max-width: 600px; margin: 0 auto; margin-top: 50px;">
     <input type="hidden" th:field="*{id}" th:value="${brand.id}" />
-        <div class="m-3">
+        <div class="m-3" style="text-shadow:1px 1px 1px white;">
             <div class="form-group row">
                 <label class="col-form-label col-sm-4">Brand Name:</label>
                 <div class="col-sm-8">

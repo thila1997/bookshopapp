@@ -15,15 +15,15 @@
     </style>
 </head>
 <body>
-<div class="container text-center">
-    <div><h1>Add a new Category</h1></div>
+<div class="container text-center" style="margin-top: 50px;">
+    <div><h1 style="font-family: Papyrus; color: white; text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;">Add a new Category</h1></div>
 
     <form th:action = "@{/categories/save}" th:object="${category}" method="post"
     style="max-width: 600px; margin: 0 auto;">
         <div class="m-3">
-            <div class="form-group row">
-                <label class="col-form-label col-sm-4">Category Name:</label>
-                <div class="col-sm-8">
+            <div class="form-group row" >
+                <label class="col-form-label col-sm-4" style="margin-top: 20px; text-shadow:1px 1px 1px white;">Category Name:</label>
+                <div class="col-sm-8" style="margin-top: 20px; ">
                 <input type="text" th:field="*{name}" class="form-control" required />
                 </div>
             </div>
